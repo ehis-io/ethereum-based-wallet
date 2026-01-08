@@ -14,8 +14,5 @@ pub fn wallet_from_mnemonic(mnemonic: String, index: u32) -> Result<LocalWallet>
 
     let wallet_clone = wallet.clone();
 
-    // let provider = Provider::<Http>::try_from("https://ethereum-rpc.publicnode.com")?;
-    // let client = Arc::new(SignerMiddleware::new(provider, wallet));
-
     Ok(wallet_clone)
 }

@@ -1,6 +1,7 @@
 mod wallet;
+#[tokio::main]
 
-fn main() {
+async fn main() {
     println!("Creating wallet...");
-    wallet::run();
+    wallet::run().await.unwrap();
 }
